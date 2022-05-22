@@ -75,6 +75,7 @@ nav{
     background-color:#e74c3c;
     padding: 5px 10px;
     margin-top: 20px;
+    font-weight:bold;
    
 }
 
@@ -352,4 +353,11 @@ text-align: justify ;
     text-align: justify;
     font-size: 13px;
 }
+    .work-box p{
+        font-size:13px;
+    }
+    .contact-right-col{
+    flex-basis: 100%;
+}
+    
 }
