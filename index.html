@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pratik's Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="style.css"/>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+    <script src="typed.min.js"></script>
+</head>
+<body>
+    <header>
+
+    <nav>
+        <div class="logo">
+            PORTFO<span>LIO</span>
+        </div>
+        <div class="menu">
+            <a href="#">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#work">Services</a>
+            <a href="#contact">Contact</a>
+        </div>
+    </nav>
+
+    <div class="text">
+        <p>Hello, I am</p>
+        <h1>Pratik Gohel</h1>
+        <p>And I'm a <span id="ani" style="color: #e74c3c;"></span></p>
+        <!-- <button class="c-btn">Hire Me</button> -->
+    </div>
+    </header>
+
+    <section id="about">
+        <div class="section-info">
+            <h3>WHO <span>AM I?</span></h3>
+        </div>
+        <div class="about-row">
+            <div class="about-left-col">
+                <img src="profile.jpg" alt="not working">
+                
+            </div>
+            <div class="about-right-col">
+                <p id="p-title">Hello, I'm Pratik & I'm a <span id="ani1" style="color: #e74c3c;"></span></p>
+                <p>I'm a student in the Master's of Computer Application at GLS University , I had completed my bachelor's degree from also GLS University and interested in website development as a front-end and back-end developer and have some basic understanding of a ReactJs and Django(python) also.</p><br>
+                <p> I'm from Gujarat and I have a serious passion for solving complex problem and creating good quality and maintainable website.</p>
+                <br>
+                <p> I can say I'm Well-organised person, problem solverand Fast learner.</p>
+                <a href="Cv.pdf"><button class="c-btn ">Download CV</button></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="skills">
+        <div class="section-info">
+            <h3 style="color: white;">ABOUT <span>MY SKILL'S</span></h3>
+        </div>
+        <div class="skills-row">
+            <div class="skills-left-col">
+                <p>I have idea of creating website and host that on github using server pages feature.</p><br>
+                <p>I had created website using HTML , CSS , JAVASCRIPT and used python and php as back-end language and connected with database like mysql.
+                </p><br>
+                <p>I have a good understnding of database related concept.</p>
+
+                    <!-- <button class="c-btn">Read More</button> -->
+            </div>
+            <div class="skills-right-col">
+                <div class="progress-div">
+                    <p>
+                        <span>HTML</span><br>
+                        <progress value="80" max="100"></progress><span>80%</span>
+                    </p>
+                    <p>
+                        <span>JAVASCRIPT</span><br>
+                        <progress value="60" max="100"></progress><span>60%</span>
+                    </p>
+                    <p>
+                        <span>JAVA</span><br>
+                        <progress value="75" max="100"></progress><span>75%</span>
+                    </p>
+                    <p>
+                        <span>PYTHON</span><br>
+                        <progress value="80" max="100"></progress><span>80%</span>
+                    </p>
+                    <p>
+                        <span>ANDROID STUDIO</span><br>
+                        <progress value="60" max="100"></progress><span>60%</span>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="work">
+        <div class="section-info">
+            <h3>MY <span>WORK</span></h3>
+        </div>
+        <div class="work-row">
+            <div class="work-box" data-tilt>
+                <img src="b2.png"/>
+                <h2>Web Devlopment</h2><br>
+                <p> I had created many website like sudoku and dinosour game and provide my best on it and created news website using react js.
+                    </p>
+            </div>
+            <div class="work-box" data-tilt>
+                <img src="b2.png"/>
+                <h2>Django(python)</h2><br>
+                <p>I had created one website using Django framwork of python where we connected databases with it and name of that website is face expression recoganization using deep learning.
+                    </p>
+            </div>
+            <div class="work-box" data-tilt>
+                <img src="b2.png"/>
+                <h2>Application Devlopment</h2><br>
+                <p>I have basic understanding of android concept where i have created age calculator and task manager website and have idea of database conncetivity(sqlite).
+                    </p>
+            </div>
+            
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="section-info">
+            <h3 style="color: white;">GET IN <span style="color: black;">TOUCH</span></h3>
+        </div>
+        <div class="contact-row">
+            <div class="contact-left-col">
+                <img src="b3.png">
+            </div>
+            <div class="contact-right-col">
+                <form>
+                    <h2>Connect with me</h2>
+                    <input type="text" name="" placeholder="Name" required/>
+                    <br>
+                    <input type="email" name="" placeholder="E-mail" required>
+                    <br>
+                    <textarea cols="40" rows="10" placeholder="Meassage" required></textarea><br>
+                    <button class="c-btn " >SUBMIT</button>
+
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <section id="footer">
+        <h2>Developed by Pratik Gohel</h2>
+        <img src="icon.png" alt="">
+    </section>
+    
+    <script src="jquery.ripples-min.js"></script>
+    <script>
+        jQuery(document).ready(
+            function()
+            {
+                $('header').ripples({
+                    dropRadius: 20,
+                    perturbance: 0.03,
+                    
+                  });
+            }
+        );
+    </script>
+    <script>
+        let animate = new Typed('#ani',{
+            strings:["web developer","web designer","Android Application Creator","Writer"],
+            typeSpeed:100,
+            backSpeed:100,
+            loop:true,
+        })
+    </script>
+    <script>
+        let animate1 = new Typed('#ani1',{
+            strings:["web developer","web designer","Android Application Creator","Writer"],
+            typeSpeed:100,
+            backSpeed:100,
+            loop:true,
+        })
+    </script>
+
+    <script src="tilt.jquery.min.js"></script>
+</body>
+</html>
