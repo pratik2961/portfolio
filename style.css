@@ -337,4 +337,12 @@ text-align: justify ;
         font-size: 10px;
         
     }
+    .about-right-col p{
+    font-size: 13px;
+    text-align: justify;
+}
+    .skills-left-col p {
+    text-align: justify;
+    font-size: 13px;
+}
 }
