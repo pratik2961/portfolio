@@ -261,7 +261,8 @@ text-align: justify ;
         background: url(bg1.jpeg);
         height: 450px;
         background-size: cover;
-
+        
+        background-attachment: fixed;
     }
     .menu a{
         display: none;
